@@ -7,10 +7,6 @@ variable "location"{
 }
 
 
-variable "subscriptionId"{
-
-}
-
 variable "prefix"{
   
 }
