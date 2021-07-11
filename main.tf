@@ -40,7 +40,7 @@ storage_image_reference {
     publisher = var.publisher
     offer     = var.offer
     sku       = var.sku
-    version   = var.version
+    version   = "latest"
 }
   storage_os_disk {
     name              = "myosdisk1"
