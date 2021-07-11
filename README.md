@@ -14,8 +14,8 @@
 # offer="UbuntuServer"
 # version="latest"
 # computer_name="myVM"
-# admin_username="mahekbatra7"
-# admin_password="Mbatra123!"
+# admin_username="mahekbatra"
+# admin_password="Password123!"
 # }
 
 ## Argument Reference:
