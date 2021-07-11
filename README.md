@@ -8,7 +8,7 @@
 # resource_group ="taskrg"
 # location="eastus"
 # prefix="lwterra"
-# publisher="Canonical"}
+# publisher="Canonical"
 # sku="16.04-LTS"
 # offer="UbuntuServer"
 # computer_name="myVM"
