@@ -28,11 +28,6 @@ variable "offer"{
  
 }
 
-variable "version"{
-  
-}
-
-
 variable "computer_name"{
   
 }
