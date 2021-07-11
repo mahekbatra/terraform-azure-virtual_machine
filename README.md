@@ -6,7 +6,7 @@
 ```
  module "virtual_machine" {
      source  = "mahekbatra/virtual_machine/azure"
-     version = "1.4.0"
+     version = "1.6.0"
      resource_group ="taskrg"
      location="eastus"
      prefix="lwterra"
@@ -35,7 +35,7 @@ The following arguments are supported:
 
 <b>vm_size</b> - (Required) Specifies the size of the Virtual Machine. See also Azure VM Naming Conventions.
  
- # A os_profile block supports the following:
+## A os_profile block supports the following:
 
 <b>computer_name</b> - (Required) Specifies the name of the Virtual Machine.
 
