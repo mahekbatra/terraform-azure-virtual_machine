@@ -37,11 +37,11 @@ resource "azurerm_virtual_machine" "main" {
   vm_size               = "Standard_B1s"
 
 storage_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "16.04-LTS"
-    version   = "latest"
-  }
+    publisher = var.publisher
+    offer     = var.offer
+    sku       = var.sku
+    version   = var.version
+}
   storage_os_disk {
     name              = "myosdisk1"
     caching           = "ReadWrite"
