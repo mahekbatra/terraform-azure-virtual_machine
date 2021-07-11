@@ -4,15 +4,13 @@
 
 # module "virtual_machine" {
 # source  = "mahekbatra/virtual_machine/azure"
-# version = "1.2.0"
+# version = "1.3.0"
 # resource_group ="taskrg"
 # location="eastus"
-# subscriptionId"="xxxxxxxxxxxxxx"
 # prefix="lwterra"
 # publisher="Canonical"}
 # sku="16.04-LTS"
 # offer="UbuntuServer"
-# version="latest"
 # computer_name="myVM"
 # admin_username="mahekbatra"
 # admin_password="Password123!"
