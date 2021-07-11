@@ -1,5 +1,23 @@
 # terraform-azure-virtual_machine
 
+# Example
+
+# module "virtual_machine" {
+# source  = "mahekbatra/virtual_machine/azure"
+# version = "1.2.0"
+# resource_group ="taskrg"
+# location="eastus"
+# subscriptionId"="xxxxxxxxxxxxxx"
+# prefix="lwterra"
+# publisher="Canonical"}
+# sku="16.04-LTS"
+# offer="UbuntuServer"
+# version="latest"
+# computer_name="myVM"
+# admin_username="mahekbatra7"
+# admin_password="Mbatra123!"
+# }
+
 ## Argument Reference:
 
 The following arguments are supported:
@@ -26,11 +44,11 @@ admin_username - (Required) Specifies the name of the local administrator accoun
 
 admin_password - (Required for Windows, Optional for Linux) The password associated with the local administrator account.
 
-A os_profile_linux_config block supports the following:
+## A os_profile_linux_config block supports the following:
 
 disable_password_authentication - (Required) Specifies whether password authentication should be disabled. If set to false, an admin_password must be specified.
 
-A storage_image_reference block supports the following:
+## A storage_image_reference block supports the following:
 
 This block provisions the Virtual Machine from one of two sources: an Azure Platform Image (e.g. Ubuntu/Windows Server) or a Custom Image.
 
