@@ -23,25 +23,25 @@
 
 The following arguments are supported:
 
-:one: <b>name<b/> - (Required) Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
+<b>name<b/> - (Required) Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.
 
-:two: <b>resource_group_name<b/> - (Required) Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
+<b>resource_group_name<b/> - (Required) Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
 
-:three: <b>location</b> - (Required) Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
+<b>location</b> - (Required) Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
 
-:four: <b>network_interface_ids</b> - (Required) A list of Network Interface ID's which should be associated with the Virtual Machine.
+<b>network_interface_ids</b> - (Required) A list of Network Interface ID's which should be associated with the Virtual Machine.
 
-:five: <b>os_profile_linux_config</b> - (Required, when a Linux machine) A os_profile_linux_config block.
+<b>os_profile_linux_config</b> - (Required, when a Linux machine) A os_profile_linux_config block.
 
-:six: <b>vm_size<b/> - (Required) Specifies the size of the Virtual Machine. See also Azure VM Naming Conventions.
+<b>vm_size<b/> - (Required) Specifies the size of the Virtual Machine. See also Azure VM Naming Conventions.
 
 ### A os_profile block supports the following:
 
-:one: computer_name - (Required) Specifies the name of the Virtual Machine.
+computer_name - (Required) Specifies the name of the Virtual Machine.
 
-:two: admin_username - (Required) Specifies the name of the local administrator account.
+admin_username - (Required) Specifies the name of the local administrator account.
 
-:three: admin_password - (Required for Windows, Optional for Linux) The password associated with the local administrator account.
+admin_password - (Required for Windows, Optional for Linux) The password associated with the local administrator account.
 
 ## A os_profile_linux_config block supports the following:
 
@@ -53,10 +53,10 @@ This block provisions the Virtual Machine from one of two sources: an Azure Plat
 
 ### To provision from an Azure Platform Image, the following fields are applicable:
 
-:one: publisher - (Required) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+publisher - (Required) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
 
-:two: offer - (Required) Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+offer - (Required) Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
 
-:three: sku - (Required) Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+sku - (Required) Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
 
-:four: version - (Optional) Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+version - (Optional) Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
